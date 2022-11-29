@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="res.groups" id="group_pos_order_disabled">
+            <field name="name">Disabled Pos Orders</field>
+        </record>
+     
+	<record model="res.groups" id="group_factura_global_details">
+            <field name="name">Factura Global Details</field>
+        </record>
+
+
+</odoo>

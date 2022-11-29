@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_invoice_form_inh">
+            <field name="name">view_invoice_form_inh</field>
+            <field name="model">account.move</field>
+	    <field name="inherit_id" ref="factura_global.factura_global_view_invoice_form"/>
+            <field name="arch" type="xml">
+
+		    <button name="action_view_payments_pos"  position="attributes">
+			    <attribute name="groups">factura_global_complemento.group_factura_global_details</attribute>
+	            </button>
+		    <xpath expr="//field[@name='pedidos_pos']/parent::group/parent::page" position="attributes">
+			    <attribute name="groups">factura_global_complemento.group_factura_global_details</attribute>
+                        </xpath>
+			<xpath expr="//field[@name='payments_pos']/parent::group/parent::page" position="attributes">
+			    <attribute name="groups">factura_global_complemento.group_factura_global_details</attribute>
+                        </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+

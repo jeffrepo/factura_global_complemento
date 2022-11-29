@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+        <record model="ir.ui.view" id="wizard_factura_global_view_form_inh">
+            <field name="name">wizard.form.inh</field>
+            <field name="model">wizard.factura.global</field>
+	    <field name="inherit_id" ref="factura_global.wizard_factura_global_view_form"/>
+            <field name="arch" type="xml">
+		    <field name="partner_to_group" position="after">
+			    <field name="max_amount" />
+		    </field>
+            </field>
+        </record>
+    
+
+</odoo>    
+
+
+
